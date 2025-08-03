@@ -1,57 +1,76 @@
-<h1>Active Directory Home Lab </h1>
-
-<h2>Description</h2>
-In this lab, I'm going to walk through how to create an Active Directory home lab Environment using Oracle Virtual Box.
-<br />
-
-
-<h2>Languages and Utilities Used</h2>
-
-- <b>PowerShell</b> 
-- <b>Oracle Virtual Box</b>
-
-<h2>Environments Used </h2>
-
-- <b>Windows 10</b> (22H2)
-- <b>Server 2019</b>
-
-<h2>Program walk-through:</h2>
-
 <p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
 </p>
 
-<!--
- ```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
---!>
+<h1>On-premises Active Directory Deployed in the Cloud (Azure)</h1>
+This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
+
+
+<h2>Environments and Technologies Used</h2>
+
+- Microsoft Azure (Virtual Machines/Compute)
+- Remote Desktop
+- Active Directory Domain Services
+- PowerShell
+
+<h2>Operating Systems Used </h2>
+
+- Windows Server 2022
+- Windows 10 (21H2)
+
+<h2>High-Level Deployment and Configuration Steps</h2>
+
+- Turned on Active Directory in Server Manager
+- Made two folders: one for Admin and one for Employees
+- Created a user in the Admin folder
+- Added the user to Domain Users and Domain Admins
+
+<h2>Deployment and Configuration Steps</h2>
+
+Step 1 – AD DS Role Installed 
+
+Active Directory Domain Services (AD DS) was installed using Server Manager to start setting up a domain.
+
+<p>
+  
+![image](https://github.com/user-attachments/assets/29600652-5f57-434b-bc35-a04b4ec2d596)
+</p>
+<p>
+  
+</p>
+<br />
+
+<p>
+  
+Step 2 – Create New Organizational Units (OUs)
+
+Two folders, called Organizational Units (OUs), were created to organize users into separate groups: one for employees and one for admins.
+
+![tod](https://github.com/user-attachments/assets/452a428c-3237-418e-befa-64f2780e8675)
+
+</p>
+<br />
+
+
+<p>
+    
+Step 3 – View User in Directory
+
+The user account was successfully added to the Admin folder in Active Directory.
+
+![te](https://github.com/user-attachments/assets/ffb7fd45-a890-4901-9fc3-8cb7a0b400ac)
+
+</p>
+<br />
+
+<p>
+
+Step 4 – Add User to Group 
+
+The user account was added to the “Domain Admins” group to give full administrative access across the domain.
+
+![Screenshot 2025-06-17 152009](https://github.com/user-attachments/assets/11751c50-18a4-42b7-b207-bfebd5dc2fb8)
+
+</p>
+<br />
+  
